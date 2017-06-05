@@ -1,0 +1,12 @@
+Testing DNode_Init()...
+     N.prev is NULL.
+     N.next is NULL.
+   That looked OK.
+
+Testing DList_Init()...
+     L.fGuard.prev is NULL.
+     L.rGuard.next is NULL.
+     L.fGuard.next == &L.rGuard.
+     L.rGuard.prev == &L.fGuard.
+   That looked OK.
+

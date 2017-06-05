@@ -1,0 +1,237 @@
+Testing DList_PushFront()...
+   Pushed a single node to front.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    7FFCB0C60FD0
+        node(1).next:   7FFCB0C60FD0
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list comments:
+       1:  10
+   Testing DList_PushFront() some more...
+      ... pushing four more nodes to front.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74B8
+        node(3).next:   01CB74B8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74B8
+        & of node 5:    01CB7498
+        node(4).next:   01CB7498
+        node(5).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7498
+        & of node 6:    7FFCB0C60FD0
+        node(5).next:   7FFCB0C60FD0
+        node(6).prev:   01CB7498
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list contents:
+     Idx  Data  Address     Correct
+       1    50  0x01CB7518  0x01CB7518
+       2    40  0x01CB74F8  0x01CB74F8
+       3    30  0x01CB74D8  0x01CB74D8
+       4    20  0x01CB74B8  0x01CB74B8
+       5    10  0x01CB7498  0x01CB7498
+   Had correct number of nodes.
+
+Testing DList_PushRear()...
+   Pushed a single node to rear.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    7FFCB0C60FD0
+        node(1).next:   7FFCB0C60FD0
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list contents:
+       1:  10
+   Testing DList_PushRear() some more...
+      ... pushing four more nodes to rear.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74B8
+        node(3).next:   01CB74B8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74B8
+        & of node 5:    01CB7498
+        node(4).next:   01CB7498
+        node(5).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7498
+        & of node 6:    7FFCB0C60FD0
+        node(5).next:   7FFCB0C60FD0
+        node(6).prev:   01CB7498
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list comments:
+     Idx  Data  Address     Correct
+       1    10  0x01CB7518  0x01CB7518
+       2    20  0x01CB74F8  0x01CB74F8
+       3    30  0x01CB74D8  0x01CB74D8
+       4    40  0x01CB74B8  0x01CB74B8
+       5    50  0x01CB7498  0x01CB7498
+   Had correct number of nodes.
+
+Testing DList_PushBefore()...
+   Pushed a single node before the rear guard.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    7FFCB0C60FD0
+        node(1).next:   7FFCB0C60FD0
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list comments:
+       1:  10
+   Testing DList_PushBefore() some more...
+      ... pushing four more nodes, each before the previous one.
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FC0
+       &pL->rGuard:       7FFCB0C60FD0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FC0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FC0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74B8
+        node(3).next:   01CB74B8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74B8
+        & of node 5:    01CB7498
+        node(4).next:   01CB7498
+        node(5).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7498
+        & of node 6:    7FFCB0C60FD0
+        node(5).next:   7FFCB0C60FD0
+        node(6).prev:   01CB7498
+      OK, the connections there looked good.
+   OK, passed that...
+   Current list comments:
+     Idx  Data  Address     Correct
+       1    50  0x01CB7518  0x01CB7518
+       2    40  0x01CB74F8  0x01CB74F8
+       3    30  0x01CB74D8  0x01CB74D8
+       4    20  0x01CB74B8  0x01CB74B8
+       5    10  0x01CB7498  0x01CB7498
+   Had correct number of nodes.
+

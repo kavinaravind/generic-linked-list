@@ -1,0 +1,19 @@
+Testing DList_Empty()...
+    Making a DList with no nodes.
+    DList_Empty() confirms list is empty.
+    Now we'll add one element to the list.
+    DList_Empty() confirms list is not empty.
+Testing DList_Front()...
+    Making a DList with no nodes.
+    DList_Front() returned NULL.
+    Now we'll add one element to the list.
+    DList_Front() returned the correct address.
+    Now we'll add another element to the list.
+    DList_Front() returned the correct address.
+Testing DList_Back()...
+    Making a DList with no nodes.
+    DList_Back() returned NULL.
+    Now we'll add one element to the list.
+    DList_Back() returned the correct address.
+    Now we'll add another element to the list.
+    DList_Back() returned the correct address.

@@ -1,0 +1,608 @@
+Testing DList_PopFront()...
+   Building a list for testing (using PushRear)...
+    Checking integrity... should pass, of course...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74B8
+        node(3).next:   01CB74B8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74B8
+        & of node 5:    01CB7498
+        node(4).next:   01CB7498
+        node(5).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7498
+        & of node 6:    7FFCB0C60FC0
+        node(5).next:   7FFCB0C60FC0
+        node(6).prev:   01CB7498
+      OK, the connections there looked good.
+     ... popping all nodes from the front of the list.
+   Initiating Pop 0
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB74F8
+        node(0).next:   01CB74F8
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74F8
+        & of node 2:    01CB74D8
+        node(1).next:   01CB74D8
+        node(2).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74D8
+        & of node 3:    01CB74B8
+        node(2).next:   01CB74B8
+        node(3).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74B8
+        & of node 4:    01CB7498
+        node(3).next:   01CB7498
+        node(4).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB7498
+        & of node 5:    7FFCB0C60FC0
+        node(4).next:   7FFCB0C60FC0
+        node(5).prev:   01CB7498
+      OK, the connections there looked good.
+    Pop 0 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    List was OK after pop 0.
+   Initiating Pop 1
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB74D8
+        node(0).next:   01CB74D8
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74D8
+        & of node 2:    01CB74B8
+        node(1).next:   01CB74B8
+        node(2).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74B8
+        & of node 3:    01CB7498
+        node(2).next:   01CB7498
+        node(3).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB7498
+        & of node 4:    7FFCB0C60FC0
+        node(3).next:   7FFCB0C60FC0
+        node(4).prev:   01CB7498
+      OK, the connections there looked good.
+    Pop 1 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    List was OK after pop 1.
+   Initiating Pop 2
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB74B8
+        node(0).next:   01CB74B8
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74B8
+        & of node 2:    01CB7498
+        node(1).next:   01CB7498
+        node(2).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB7498
+        & of node 3:    7FFCB0C60FC0
+        node(2).next:   7FFCB0C60FC0
+        node(3).prev:   01CB7498
+      OK, the connections there looked good.
+    Pop 2 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    List was OK after pop 2.
+   Initiating Pop 3
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    7FFCB0C60FC0
+        node(1).next:   7FFCB0C60FC0
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+    Pop 3 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    List was OK after pop 3.
+   Initiating Pop 4
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+        pL->fGuard.next == &pL->rGuard, list should be empty.
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.next:  7FFCB0C60FC0
+        pL->rGuard.prev:  7FFCB0C60FB0
+      OK, the connections there looked good.
+    Pop 4 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    List was OK after pop 4.
+
+Testing DList_PopRear()...
+   Building a list for testing (using PushRear)...
+    Checking integrity... should pass, of course...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    01CB74B8
+        node(1).next:   01CB74B8
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74B8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74F8
+        node(3).next:   01CB74F8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74F8
+        & of node 5:    01CB7518
+        node(4).next:   01CB7518
+        node(5).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7518
+        & of node 6:    7FFCB0C60FC0
+        node(5).next:   7FFCB0C60FC0
+        node(6).prev:   01CB7518
+      OK, the connections there looked good.
+   Testing DList_PopRear()...
+      ... popping all nodes from the rear of the list.
+    Initiating Pop 0.
+    Pop 0 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    01CB74B8
+        node(1).next:   01CB74B8
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74B8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74F8
+        node(3).next:   01CB74F8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74F8
+        & of node 5:    7FFCB0C60FC0
+        node(4).next:   7FFCB0C60FC0
+        node(5).prev:   01CB74F8
+      OK, the connections there looked good.
+    List was OK after pop 0.
+    Initiating Pop 1.
+    Pop 1 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    01CB74B8
+        node(1).next:   01CB74B8
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74B8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    7FFCB0C60FC0
+        node(3).next:   7FFCB0C60FC0
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+    List was OK after pop 1.
+    Initiating Pop 2.
+    Pop 2 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    01CB74B8
+        node(1).next:   01CB74B8
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74B8
+        & of node 3:    7FFCB0C60FC0
+        node(2).next:   7FFCB0C60FC0
+        node(3).prev:   01CB74B8
+      OK, the connections there looked good.
+    List was OK after pop 2.
+    Initiating Pop 3.
+    Pop 3 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FB0
+        & of node 1:    01CB7498
+        node(0).next:   01CB7498
+        node(1).prev:   7FFCB0C60FB0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7498
+        & of node 2:    7FFCB0C60FC0
+        node(1).next:   7FFCB0C60FC0
+        node(2).prev:   01CB7498
+      OK, the connections there looked good.
+    List was OK after pop 3.
+    Initiating Pop 4.
+    Pop 4 returned correct address.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+        pL->fGuard.next == &pL->rGuard, list should be empty.
+       &pL->fGuard:       7FFCB0C60FB0
+       &pL->rGuard:       7FFCB0C60FC0
+        pL->fGuard.next:  7FFCB0C60FC0
+        pL->rGuard.prev:  7FFCB0C60FB0
+      OK, the connections there looked good.
+    List was OK after pop 4.
+
+Testing DList_PopBefore()...
+   Building a list for testing (using PushRear)...
+    Checking integrity... should pass, of course...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FA0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FA0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB74B8
+        node(3).next:   01CB74B8
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB74B8
+        & of node 5:    01CB7498
+        node(4).next:   01CB7498
+        node(5).prev:   01CB74B8
+      OK, the connections there looked good.
+       Considering nodes 5 and 6
+        & of node 5:    01CB7498
+        & of node 6:    7FFCB0C60FB0
+        node(5).next:   7FFCB0C60FB0
+        node(6).prev:   01CB7498
+      OK, the connections there looked good.
+   Testing DList_PopBefore()...
+      ... popping all nodes in random order.
+    Initiating pop 0 for node at address 1CB7498.
+    Pop 0 was OK.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FA0
+        & of node 1:    01CB7518
+        node(0).next:   01CB7518
+        node(1).prev:   7FFCB0C60FA0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB7518
+        & of node 2:    01CB74F8
+        node(1).next:   01CB74F8
+        node(2).prev:   01CB7518
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74F8
+        & of node 3:    01CB74D8
+        node(2).next:   01CB74D8
+        node(3).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB74D8
+        & of node 4:    01CB7498
+        node(3).next:   01CB7498
+        node(4).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 4 and 5
+        & of node 4:    01CB7498
+        & of node 5:    7FFCB0C60FB0
+        node(4).next:   7FFCB0C60FB0
+        node(5).prev:   01CB7498
+      OK, the connections there looked good.
+    List was OK after pop 0.
+    Initiating pop 1 for node at address 1CB74F8.
+    Pop 1 was OK.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FA0
+        & of node 1:    01CB74F8
+        node(0).next:   01CB74F8
+        node(1).prev:   7FFCB0C60FA0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74F8
+        & of node 2:    01CB74D8
+        node(1).next:   01CB74D8
+        node(2).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB74D8
+        & of node 3:    01CB7498
+        node(2).next:   01CB7498
+        node(3).prev:   01CB74D8
+      OK, the connections there looked good.
+       Considering nodes 3 and 4
+        & of node 3:    01CB7498
+        & of node 4:    7FFCB0C60FB0
+        node(3).next:   7FFCB0C60FB0
+        node(4).prev:   01CB7498
+      OK, the connections there looked good.
+    List was OK after pop 1.
+    Initiating pop 2 for node at address 1CB7498.
+    Pop 2 was OK.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FA0
+        & of node 1:    01CB74F8
+        node(0).next:   01CB74F8
+        node(1).prev:   7FFCB0C60FA0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74F8
+        & of node 2:    01CB7498
+        node(1).next:   01CB7498
+        node(2).prev:   01CB74F8
+      OK, the connections there looked good.
+       Considering nodes 2 and 3
+        & of node 2:    01CB7498
+        & of node 3:    7FFCB0C60FB0
+        node(2).next:   7FFCB0C60FB0
+        node(3).prev:   01CB7498
+      OK, the connections there looked good.
+    List was OK after pop 2.
+    Initiating pop 3 for node at address 7FFCB0C60FB0.
+    Pop 3 was OK.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+     List appears to be nonempty.
+       Considering nodes 0 and 1
+        & of node 0:    7FFCB0C60FA0
+        & of node 1:    01CB74F8
+        node(0).next:   01CB74F8
+        node(1).prev:   7FFCB0C60FA0
+      OK, the connections there looked good.
+       Considering nodes 1 and 2
+        & of node 1:    01CB74F8
+        & of node 2:    7FFCB0C60FB0
+        node(1).next:   7FFCB0C60FB0
+        node(2).prev:   01CB74F8
+      OK, the connections there looked good.
+    List was OK after pop 3.
+    Initiating pop 4 for node at address 7FFCB0C60FB0.
+    Pop 4 was OK.
+    Node is not present in list.
+    Had correct number of nodes.
+    Checking integrity of the list now...
+     First examine the integrity of the guard nodes:
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.prev:  00000000
+        pL->rGuard.next:  00000000
+     Now, walk the list and examine the integrity of the connections:
+        pL->fGuard.next == &pL->rGuard, list should be empty.
+       &pL->fGuard:       7FFCB0C60FA0
+       &pL->rGuard:       7FFCB0C60FB0
+        pL->fGuard.next:  7FFCB0C60FB0
+        pL->rGuard.prev:  7FFCB0C60FA0
+      OK, the connections there looked good.
+    List was OK after pop 4.
+

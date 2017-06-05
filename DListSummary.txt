@@ -1,0 +1,12 @@
+Beginning test of DList implementation.
+
+Passed initialization test!
+Passed insertion test!
+Passed deletion test!
+Passed reporters test!
+
+Initialization:   40
+Insertion:       330
+Deletion:        450
+Reporters:        80
+Total score:     900
